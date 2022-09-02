@@ -11,7 +11,7 @@
 // const res = map([1,2,3,4,5,6,7],function(val){return val*2;});
 // console.log(res)
 
-const filter = function(val){
+/*const filter = function(val){
     let j=0;
     const newArr = [];
     for(let i=0; i < val.length; i++) { 
@@ -24,4 +24,21 @@ const filter = function(val){
 };
 
  let a = filter([1,2,3,4,5]);
- console.log(a);
+ console.log(a);*/
+
+let arr = [1,2,3,4];
+
+let fun = function (arr, func, arj) { 
+    arr.forEach(function(val, i){
+      arj = val;
+     arj = func(arj,val,i)
+       
+       
+    })
+     return arj;
+};
+
+
+let values = fun(arr,function(arj,val){return Math.max(arj,val)})
+console.log(values)
+
