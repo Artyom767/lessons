@@ -22,23 +22,18 @@
     };
     return newArr;
 };
-
  let a = filter([1,2,3,4,5]);
  console.log(a);*/
+ 
 
 let arr = [1,2,3,4];
-
 let fun = function (arr, func, arj) { 
     arr.forEach(function(val, i){
       arj = val;
-     arj = func(arj,val,i)
-       
-       
+     arj = func(arj,val,i)  
     })
      return arj;
 };
-
-
 let values = fun(arr,function(arj,val){return Math.max(arj,val)})
-console.log(values)
+ console.log(values)
 
