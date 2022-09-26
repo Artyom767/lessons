@@ -40,13 +40,13 @@ let values = fun(arr,function(arj,val){return Math.max(arj,val)})
 const c = +prompt("nermuceq binar code");
 let arr = Array.from(c.toString()).map(Number), bi=0;
 let newArr = [],j = arr.length-1;
-for (let i = 0; i <= arr.length; i++) {
-  newArr[j] = arr[i];
-  j--;
-}
-for (let i = 0; i < newArr.length; i++) {
-  if (newArr[i] === 1){
-    bi += Math.pow(2,i);
+ for (let i = 0; i <= arr.length; i++) {
+   newArr[j] = arr[i];
+    j--;
   }
-}
+ for (let i = 0; i < newArr.length; i++) {
+   if (newArr[i] === 1){
+     bi += Math.pow(2,i);
+    }
+  }
 alert(bi);
