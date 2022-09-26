@@ -26,7 +26,7 @@
  console.log(a);*/
  
 
-let arr = [1,2,3,4];
+/*let arr = [1,2,3,4];
 let fun = function (arr, func, arj) { 
     arr.forEach(function(val, i){
       arj = val;
@@ -35,5 +35,18 @@ let fun = function (arr, func, arj) {
      return arj;
 };
 let values = fun(arr,function(arj,val){return Math.max(arj,val)})
- console.log(values)
+ console.log(values)*/
 
+const c = +prompt("nermuceq binar code");
+let arr = Array.from(c.toString()).map(Number), bi=0;
+let newArr = [],j = arr.length-1;
+for (let i = 0; i <= arr.length; i++) {
+  newArr[j] = arr[i];
+  j--;
+}
+for (let i = 0; i < newArr.length; i++) {
+  if (newArr[i] === 1){
+    bi += Math.pow(2,i);
+  }
+}
+alert(bi);
